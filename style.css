@@ -16,6 +16,10 @@ main {
     flex-flow: column wrap;
 }
 
+header {
+    padding-top: 70px;
+}
+
 .content {
     text-align: left;
     padding-left: 1em;
@@ -37,7 +41,8 @@ a:hover {
     margin-bottom: 1em;
 }
 #navegacao {
-    width: 100%;
+    position: fixed;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,6 +83,10 @@ a:hover {
 }
 
 @media (orientation: portrait) {
+    header div {
+        padding-top: 200px;
+    }
+    
     #nav_list {
         display: flex;
         flex-flow: column wrap;
